@@ -1,0 +1,13 @@
+body {
+    background-color: bisque;
+}
+
+.card-container {
+    display: grid;
+    gride-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 300px;
+}
