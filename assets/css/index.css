@@ -4,25 +4,26 @@ body {
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
     grid-template-areas: 
-    "box-1 box-2 box-4"
-    "box-1 box-3 box-3";
+    "box-1 box-1 box-2 box-2 box-3 box-3"
+    "box-1 box-1 box-4 box-4 box-5 box-5";
+    width: 100vh;
     /* "box-3 box-4 box-4"; */
-    /* max-width: 900px; */
+    /* max-height:  500px; */
     /* margin: auto; */
     /* justify-content: center; */
-    text-align: center;
+    /* text-align: center; */
     text-justify: center;
 
 }
 
 .card {
     /* margin: 1rem auto; */
-    /* padding: 2rem; */
-    /* width: 300px; */
+    padding: 0.5rem;
+    /* width: 200px; */
     background: black;
     color: white;
     text-align: center;
@@ -40,7 +41,7 @@ body {
 /* Cool animation för border som snurrar runt sin .card i pride färger */
 
 .card::after, .card::before {
-    background: red;
+    /* background: red; */
     content: "";
     position: absolute;
     height: 100%;
@@ -52,7 +53,7 @@ body {
     padding: 3px;
     border-radius: 10px;
     background: conic-gradient(from var(--spinning),var(--pride));
-    animation: 10s spin linear infinite;
+    animation: 15s spin linear infinite;
 }
 
 @keyframes spin {
@@ -65,6 +66,6 @@ body {
 }
 .card::before {
     filter: blur(1.2rem);
-    opacity: 0.9;
+    opacity: 0.6;
 }
 
