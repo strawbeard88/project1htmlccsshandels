@@ -28,7 +28,7 @@
   font-weight: bold;
   color: var(--textlight);
   text-decoration: none;
-  height: 70px;
+  height: 70px
 }
 
 .menu-toggle {
@@ -46,6 +46,14 @@
 @media (max-width: 768px) {
   .nav {
     display: none;
+    flex-direction: column;
+    /* background: var(--accentdark); */
+    /* position: absolute; */
+    /* top: 70px; */
+    /* right: 0; */
+    /* width: 200px; */
+    /* padding: 1rem; */
+    /* z-index: 3; */
   }
 
   .menu-toggle:checked + .menu-icon + .nav {
