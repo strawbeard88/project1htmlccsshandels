@@ -15,3 +15,10 @@
     --headerdark: grey;
     
 }
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+}
