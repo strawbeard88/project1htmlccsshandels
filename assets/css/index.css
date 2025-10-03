@@ -4,23 +4,24 @@ body {
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 2rem;
     grid-template-areas: 
-    "box-1 box-1 box-2 box-2 box-3 box-3"
-    "box-1 box-1 box-4 box-4 box-5 box-5";
-    width: 100vh;
+    "box-1 box-2 box-3 box-3"
+    "box-1 box-4 box-4 box-5";
+    /* height: 100vh; */
     /* "box-3 box-4 box-4"; */
     /* max-height:  500px; */
     /* margin: auto; */
     /* justify-content: center; */
     /* text-align: center; */
-    text-justify: center;
+    /* text-justify: center; */
 
 }
 
 .card {
+    display: grid;
     /* margin: 1rem auto; */
     padding: 0.5rem;
     /* width: 200px; */
@@ -29,6 +30,10 @@ body {
     text-align: center;
     border-radius: 10px;
     position: relative;
+    place-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 @property --spinning{
@@ -69,3 +74,14 @@ body {
     opacity: 0.6;
 }
 
+.column {
+    writing-mode: vertical-rl;   /* lodrätt */
+    text-orientation: upright;   /* bokstäverna står rätt upp */
+    transform: none;             /* ingen extra rotation */
+    letter-spacing: normal;      /* viktigt! ta bort ev. utspridning */
+    word-spacing: normal;
+    line-height: 1;             
+    white-space: normal;
+    text-align: center;  
+    font-size: 32pt;
+}
