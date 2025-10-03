@@ -4,14 +4,25 @@ body {
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 900px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas: 
+    "box-1 box-2 box-4"
+    "box-1 box-3 box-3";
+    /* "box-3 box-4 box-4"; */
+    /* max-width: 900px; */
+    /* margin: auto; */
+    /* justify-content: center; */
+    text-align: center;
+    text-justify: center;
+
 }
+
 .card {
-    margin: 1rem auto;
-    padding: 2rem;
-    width: 300px;
+    /* margin: 1rem auto; */
+    /* padding: 2rem; */
+    /* width: 300px; */
     background: black;
     color: white;
     text-align: center;
@@ -25,7 +36,9 @@ body {
     initial-value: 0deg;
 
 }
+
 /* Cool animation för border som snurrar runt sin .card i pride färger */
+
 .card::after, .card::before {
     background: red;
     content: "";
