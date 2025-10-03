@@ -39,6 +39,10 @@ footer {
     transform:translateY(3px)
 }
 
+
+/* --------------- Button Animation ------ */
+
+
 @media (min-width: 768px) {
     footer {
         min-height: 200px;
