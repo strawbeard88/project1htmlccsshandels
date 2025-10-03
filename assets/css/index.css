@@ -1,13 +1,57 @@
 body {
-    background-color: bisque;
+    background-color: black;
 }
 
 .card-container {
     display: grid;
-    gride-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 900px;
 }
 .card {
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 2rem;
     width: 300px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
 }
+
+@property --spinning{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+
+}
+/* Cool animation för border som snurrar runt sin .card i pride färger */
+.card::after, .card::before {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    background: conic-gradient(from var(--spinning),var(--pride));
+    animation: 10s spin linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --spinning: 0deg;
+    }
+    to {
+        --spinning: 360deg;
+    }
+}
+.card::before {
+    filter: blur(1.2rem);
+    opacity: 0.9;
+}
+

@@ -13,7 +13,8 @@
     --primary-color: ;
     --secondary: ;
     --headerdark: grey;
-    --button: green
+    --button: green;
+    --pride: red, orange, yellow, green, blue, indigo, violet, red;
 }
 
 main {
