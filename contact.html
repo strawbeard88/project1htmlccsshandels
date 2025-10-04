@@ -20,13 +20,21 @@
         <label for="email">E-postadress:</label>
         <input type="email" id="email" name="email" required><br><br>
 
-        <label for="days">Välj dagar att delta (1-3 dagar):</label>
-        <select id="days" name="days" required>
-            <option value="1">1 dag</option>
-            <option value="2">2 dagar</option>
-            <option value="3">3 dagar</option>
-        </select><br><br>
-
+        <fieldset>
+            <legend>V&auml;lj dag att delta:</legend>
+            <label>
+                <input type="radio" name="days" value="friday" required>
+                Fredag
+            </label>
+            <label>
+                <input type="radio" name="days" value="saturday">
+                L&ouml;rdag
+            </label>
+            <label>
+                <input type="radio" name="days" value="sunday">
+                S&ouml;ndag
+            </label>
+        </fieldset><br><br>
         <label for="meal">Välj måltid:</label>
         <select id="meal" name="meal" required>
             <option value="meat">Kött</option>
