@@ -10,43 +10,30 @@ body {
     grid-template-areas: 
     "box-1 box-2 box-3 box-3"
     "box-1 box-4 box-4 box-5";
-    /* height: 100vh; */
-    /* "box-3 box-4 box-4"; */
-    /* max-height:  500px; */
-    /* margin: auto; */
-    /* justify-content: center; */
-    /* text-align: center; */
-    /* text-justify: center; */
 
 }
 
 .card {
     display: grid;
-    /* margin: 1rem auto; */
     padding: 0.5rem;
-    /* width: 200px; */
     background: black;
     color: white;
     text-align: center;
     border-radius: 10px;
     position: relative;
     place-items: center;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
+
 }
 
 @property --spinning{
     syntax: "<angle>";
     inherits: false;
     initial-value: 0deg;
-
 }
 
 /* Cool animation för border som snurrar runt sin .card i pride färger */
 
 .card::after, .card::before {
-    /* background: red; */
     content: "";
     position: absolute;
     height: 100%;
@@ -59,6 +46,7 @@ body {
     border-radius: 10px;
     background: conic-gradient(from var(--spinning),var(--pride));
     animation: 15s spin linear infinite;
+
 }
 
 @keyframes spin {
@@ -69,9 +57,11 @@ body {
         --spinning: 360deg;
     }
 }
+
 .card::before {
     filter: blur(1.2rem);
     opacity: 0.6;
+
 }
 
 .column {
@@ -84,4 +74,5 @@ body {
     white-space: normal;
     text-align: center;  
     font-size: 32pt;
+
 }
