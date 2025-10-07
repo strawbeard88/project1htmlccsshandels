@@ -20,8 +20,7 @@ footer {
 
 .btn {
     text-decoration: none;
-    background: var(--textlight);
-    color: var(--backdark);
+    color: white;
     font-size: 1.2rem;
     padding: 0.7rem 1rem;
     border-radius: 8px;
@@ -32,7 +31,9 @@ footer {
 }
 
 .btn:hover {
-    opacity:.70
+    opacity:.70;
+    text-decoration: underline;
+    
 }
 
 .btn:active {
