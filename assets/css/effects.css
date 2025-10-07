@@ -1,0 +1,45 @@
+/* Footer button effect  */
+
+.btn span {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+
+    padding: 15px 25px;
+    transition: 0.3s;
+}
+
+.btn-1::before {
+    background-color: black;
+    transition: 0.3s;
+}
+
+.btn-1 span {
+    color: white;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.btn-1 span:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+.btn-1.effect-1::before {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-1.effect-1:hover::before {
+    height: 0%;
+}
