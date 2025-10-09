@@ -29,7 +29,6 @@
 
 .btn-1 span:hover {
     color: black;
-    transition: 0.3s;
 }
 
 .btn-1.effect-1::before {
@@ -39,7 +38,7 @@
     height: 100%;
     width: 100%;
 }
-
+/* Denna löste jag med chatGPT då jag inte förstod vad som löste det.  */
 .btn-1.effect-1:hover::before {
     height: 0%;
 }

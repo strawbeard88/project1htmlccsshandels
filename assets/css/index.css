@@ -33,7 +33,7 @@ body {
 
 /* Cool animation för border som snurrar runt sin .card i pride färger */
 
-.card::after, .card::before {
+.card::after, .card::before  {
     content: "";
     position: absolute;
     height: 100%;
@@ -67,7 +67,7 @@ body {
 .column {
     writing-mode: vertical-rl;   /* lodrätt */
     text-orientation: upright;   /* bokstäverna står rätt upp */
-    transform: none;             /* ingen extra rotation */
+    /* /* transform: none;          ingen extra rotation */
     letter-spacing: normal;      /* viktigt! ta bort ev. utspridning */
     word-spacing: normal;
     line-height: 1;             

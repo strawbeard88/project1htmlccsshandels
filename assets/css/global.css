@@ -4,11 +4,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arimo, serif;
     font-size: 14pt;
     font-weight: 500;
-    box-sizing: border-box;
 }
+
+/* html {
+    font-size: 14pt;
+} */
 
 :root {
     --primary-color: ;
