@@ -16,12 +16,13 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 24px;
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--backlight);
+  }
 }
 
-.nav a:hover {
-  text-decoration: underline;
-  color: var(--backlight);
-}
 
 .logo {
   font-size: 28px;
