@@ -1,0 +1,20 @@
+form {
+    color: var(--textlight);
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* padding: 1rem 0; */
+}
+
+
+fieldset {
+    border: none;
+}
+
+input {
+    border:2px solid var(--secondary);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+}
