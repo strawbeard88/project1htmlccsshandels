@@ -1,0 +1,42 @@
+.card-seminar-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    grid-template-areas: 
+    "box-6 box-7 box-8 box-9 box-18"
+    "box-10 box-11 box-12 box-16 box-19"
+    "box-13 box-14 box-15 box-17 box-20"; */
+    color: white;
+}
+
+.card-seminar-container h3 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+} 
+
+.card-seminar-container h2 {
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 15px;
+    text-decoration: underline;
+} 
+
+/* .card-seminar-container {
+    
+} */
+/* 
+
+.card-seminar {
+    display: grid;
+    padding: 0.5rem;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    place-items: center;
+
+} */

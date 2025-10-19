@@ -31,7 +31,7 @@ footer {
     border: none;
     background-color: white;
     margin-bottom: 1rem;
-
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
 }
 
 
