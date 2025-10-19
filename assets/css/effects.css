@@ -1,0 +1,91 @@
+/* Footer button effect  */
+
+.btn span {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+
+    padding: 15px 25px;
+    transition: 0.3s;
+}
+
+.btn-1::before {
+    background-color: var(--secondary);
+    transition: 0.3s;
+}
+
+.btn-1 span {
+    color: var(--textlight);
+    border: 2px solid var(--secondary);
+    transition: 0.3s;
+
+    &:hover {
+        color: var(--secondary);
+    }
+}
+
+.btn-1.effect-1::before {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+/* Denna löste jag med chatGPT då jag inte förstod vad som löste det.  */
+.btn-1.effect-1:hover::before {
+    height: 0%;
+}
+
+
+
+/* border effect  */
+
+
+@property --spinning{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+/* Cool animation för border som snurrar runt sin .card i pride färger */
+
+
+/* For index.html */
+
+.card::after, .card::before  {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    background: conic-gradient(from var(--spinning),var(--gradiant));
+    animation: 15s spin linear infinite;
+
+}
+
+@keyframes spin {
+    from {
+        --spinning: 0deg;
+    }
+    to {
+        --spinning: 360deg;
+    }
+}
+
+.card::before {
+    filter: blur(1.2rem);
+    opacity: 0.6;
+}
+

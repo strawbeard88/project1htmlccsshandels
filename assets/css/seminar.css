@@ -1,0 +1,19 @@
+.card-seminar-container {
+    color: var(--textlight);
+}
+
+.card-seminar-container h3 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+} 
+
+.card-seminar-container h2 {
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 15px;
+    text-decoration: underline;
+} 
+
+

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Martel:wght@200;300;400;600;700;800;900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arimo, serif;
+    font-size: 14pt;
+    font-weight: 500;
+
+    /* border: 3px dotted hotpink; */
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+/* html {
+    font-size: 14pt;
+} */
+
+:root {
+    --textlight: white;
+    --primary-color: #707070;
+    --secondary: black;
+    --headerdark: #d2d2d2;
+    --gradiant: white, black, white, black, white;
+    --invalid: #ff8f8f;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+}
