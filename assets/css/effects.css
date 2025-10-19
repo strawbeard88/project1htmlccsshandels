@@ -22,7 +22,7 @@
 }
 
 .btn-1 span {
-    color: white;
+    color: var(--textlight);
     border: 2px solid var(--secondary);
     transition: 0.3s;
 
