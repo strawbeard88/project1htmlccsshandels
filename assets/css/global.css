@@ -17,7 +17,7 @@
 :root {
     --primary-color: ;
     --secondary: ;
-    --headerdark: grey;
+    --headerdark: rgb(210, 210, 210);
     --button: green;
     --pride: red, orange, yellow, green, blue, indigo, violet, red;
 }
