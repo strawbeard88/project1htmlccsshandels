@@ -18,3 +18,8 @@ input {
     padding: 5px;
     box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
 }
+
+.contact-button {
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+    
+}
