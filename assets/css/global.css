@@ -10,14 +10,18 @@
     font-weight: 500;
 }
 
+body {
+    background-color: var(--primary-color);
+}
+
 /* html {
     font-size: 14pt;
 } */
 
 :root {
-    --primary-color: ;
-    --secondary: ;
-    --headerdark: rgb(210, 210, 210);
+    --primary-color: #707070;
+    --secondary: black;
+    --headerdark: #d2d2d2;
     --button: green;
     --pride: red, orange, yellow, green, blue, indigo, violet, red;
 }

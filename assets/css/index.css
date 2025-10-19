@@ -1,11 +1,8 @@
 * {
-        border: hotpink dotted;
+        /* border: hotpink dotted; */
 }
 
 
-body {
-    background-color: black;
-}
 
 .card-container {
     display: grid;
