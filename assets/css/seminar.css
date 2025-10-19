@@ -1,6 +1,5 @@
 .card-seminar-container {
-    color: white;
-    /* background: var(--secondary); */
+    color: var(--textlight);
 }
 
 .card-seminar-container h3 {
