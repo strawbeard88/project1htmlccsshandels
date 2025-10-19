@@ -5,10 +5,13 @@
   padding: 1rem 2rem;
   align-items: center;
   justify-content: space-between;
+  height: 90px;
 }
 
 .nav {
   display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .nav a {
@@ -33,42 +36,13 @@
   height: 70px
 }
 
-.menu-toggle {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--textlight);
-}
 
 
 @media (max-width: 768px) {
+
+
   .nav {
-    display: none;
+    /* display: none; */
     flex-direction: column;
-    /* background: var(--accentdark); */
-    /* position: absolute; */
-    /* top: 70px; */
-    /* right: 0; */
-    /* width: 200px; */
-    /* padding: 1rem; */
-    /* z-index: 3; */
-  }
-
-  .menu-toggle:checked + .menu-icon + .nav {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block; /* visa hamburgaren */
-    margin-left: auto;
-  }
-
-  .nav a {
-    margin: 0.5rem 0;
-    font-size: 20px;
   }
 }

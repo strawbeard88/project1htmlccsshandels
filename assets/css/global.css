@@ -8,6 +8,8 @@
     font-family: Arimo, serif;
     font-size: 14pt;
     font-weight: 500;
+
+    /* border: 3px dotted hotpink; */
 }
 
 body {
@@ -23,8 +25,8 @@ body {
     --primary-color: #707070;
     --secondary: black;
     --headerdark: #d2d2d2;
-    --button: green;
-    --pride: white, black, white, black, white;
+    --gradiant: white, black, white, black, white;
+    --invalid: #ff8f8f;
 }
 
 main {

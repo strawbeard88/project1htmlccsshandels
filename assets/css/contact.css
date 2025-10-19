@@ -16,10 +16,13 @@ input {
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
     padding: 5px;
-    box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 12px var(--secondary);
 }
 
 .contact-button {
-    box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
-    
+    box-shadow: 4px 4px 12px var(--secondary);
+}
+
+input:invalid {
+    background-color: #ff8f8f;
 }
